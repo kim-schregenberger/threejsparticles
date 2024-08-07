@@ -40,7 +40,7 @@ const scene = new THREE.Scene();
  * Textures
  */
 const textureLoader = new THREE.TextureLoader();
-const particleTexture = textureLoader.load('/textures/particles/14.webp');
+const particleTexture = textureLoader.load('/threejsparticles/textures/particles/14.png');
 
 // Geometry
 const createParticles = (geometry, color, size) => {
