@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particles Morphing</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="morph-body">
+
+    <header>
+        <div class="navbar">
+            <a href="index.html#section-title">
+                <div class="navparticle"></div>
+            </a>
+        </div>
+    </header>
+
+    <canvas class="webgl"></canvas>
+
+    <section class="section morph">
+        <div class="txt">
+            <h2>PARTICLES MORPHING</h2>
+            <!-- <p>Text</p> -->
+
+            <div class="morph-trigger">
+                <button id="morph1">Torus</button>
+                <button id="morph2">Sphere</button>
+                <button id="morph3">Text</button>
+            </div>
+            <div>
+                <a href="index.html#home-morph">
+                    <button>Go back</button>
+                </a>
+            </div>
+
+        </div>     
+        <div class="canv">
+
+        </div>
+    </section>  
+
+
+    <script type="module" src="./morph.js"></script>
+</body>
+</html>
