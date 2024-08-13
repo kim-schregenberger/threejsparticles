@@ -171,12 +171,30 @@ align-items: center;
     color: #ff00a6c7;
 }
 
-.navbar
+.navbar, footer
 {
     width: 100vw;
     height: 3rem;
     position: fixed;
     z-index: 10;
+}
+
+footer
+{
+    margin-top: -3rem;
+    /* background-color: #ff00a6; */
+    position: relative;
+    color: #ffffffe8;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer a 
+{
+    color: #ffffffe8;
+    font-family: sans-serif;
 }
 
 .navparticle
