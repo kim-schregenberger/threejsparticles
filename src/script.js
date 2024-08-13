@@ -264,7 +264,7 @@ const handleClick = (x, y) => {
 
     if (intersects.length > 0) {
         const selectedParticle = intersects[0];
-        showParticlePosition(selectedParticle);
+        showParticleIndex(selectedParticle.index);
     }
 };
 
@@ -279,9 +279,9 @@ window.addEventListener('touchend', (event) => {
     }
 });
 
-function showParticlePosition(particle) {
+function showParticleIndex(index) {
     const positionElement = document.getElementById('particlePosition');
     if (positionElement) {
-        positionElement.innerHTML = `Position: (x: ${particle.point.x.toFixed(2)}, y: ${particle.point.y.toFixed(2)}, z: ${particle.point.z.toFixed(2)})`;
+        positionElement.innerHTML = `Index: ${index}`;
     }
 }

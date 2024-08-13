@@ -221,15 +221,42 @@ gltfLoader.load('./particlemodels6.glb', (gltf) =>
     // Add event listeners for buttons
     document.getElementById('morph1').addEventListener('click', () => {
         if (particles) particles.morph1();
+        updateActiveButton('morph1');
     });
     document.getElementById('morph2').addEventListener('click', () => {
         if (particles) particles.morph2();
+        updateActiveButton('morph2');
     });
     document.getElementById('morph3').addEventListener('click', () => {
         if (particles) particles.morph3();
+        updateActiveButton('morph3');
     });
 
+    // Make "Morph 1" active on load
+    particles.morph1();
+    updateActiveButton('morph1');
+
 })
+
+/**
+ * Function to update the active button style
+ */
+function updateActiveButton(activeButtonId) {
+    const buttons = document.querySelectorAll('.morph-button');
+    
+    // Reset styles for all buttons
+    buttons.forEach(button => {
+        button.style.backgroundColor = ''; // Reset background color
+        button.style.color = ''; // Reset text color
+    });
+
+    // Set styles for the active button
+    const activeButton = document.getElementById(activeButtonId);
+    if (activeButton) {
+        activeButton.style.backgroundColor = '#ff00a67b'; // Example active background color
+        activeButton.style.color = '#ffffff88'; // Example active text color
+    }
+}
 
 /**
  * Animate

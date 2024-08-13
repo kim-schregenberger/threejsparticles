@@ -209,8 +209,6 @@ footer a
 }
 
 
-
-
 .morph-trigger button, .branch-trigger button
 {
     border-radius: 5px;
@@ -230,3 +228,14 @@ span
 {
     padding-bottom: 45vh;
 } */
+
+
+.morph-button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.morph-button:hover {
+    background-color: #ddd; /* Hover effect */
+}
